@@ -62,7 +62,7 @@ App irá então mostrar uma sequência de telas:
 8. Caso usuário tenha mais de uma placa sincronizada, irá mostrar uma lista centrais de controle. Caso ele tenha apenas uma, direciona direto ao gerenciamento dela.
 
 ```mermaid
-graph TD;
+graph LR;
     INI[Início] --> LOGIN(usuário faz login);
     LOGIN --> DECISAO{usuário tem centrais de controle cadastradas?};
     DECISAO -->|sim| CENTRAIS(Lista centrais de controle cadastradas);
