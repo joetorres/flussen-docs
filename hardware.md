@@ -7,7 +7,6 @@ Tech Stack:
 
 Central de controle será suada para contorlar até duas bombas d'águas.
 
-
 Bomba 1, usada para reservatórios, sempre será conectada ao relay 1.
 
 A central poderá ser conectada a rede via Wifi, ou RJ45.
@@ -37,7 +36,7 @@ Cada central deve ser associada uma chave unica, para controle interno e relató
 * Led piscando 1, intervalo piscando 3 vezes - checar sensor 75%
 * Led piscando 1, intervalo, piscando 3 vezes - checar sensor 100%
 
-## Diagrmaa de setup de central de controle
+## Diagrmama de setup de central de controle
 
 ```mermaid
 flowchart TD;
