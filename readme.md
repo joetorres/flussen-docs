@@ -15,5 +15,5 @@ Será usado como base o app atual da Tuia.
 ## Partes do projeto
 
 * [Aplicativo](aplicativo.md)
-* [Central de cpontrole](hardware.md)
+* [Central de controle](hardware.md)
 * [Backend](backend.md)
