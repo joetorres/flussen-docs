@@ -61,27 +61,6 @@ App irá então mostrar uma sequência de telas:
    * Reservatório
 8. Caso usuário tenha mais de uma placa sincronizada, irá mostrar uma lista centrais de controle. Caso ele tenha apenas uma, direciona direto ao gerenciamento dela.
 
-```mermaid
-flowchart TD;
-    INI[Início] --> LOGIN(usuário faz login);
-    LOGIN --> DECISAO{usuário tem centrais de controle cadastradas?};
-    DECISAO -->|sim| CENTRAIS(Lista centrais de controle cadastradas);
-    CENTRAIS --> SELECIONA_CENTRAL(Seleciona uma central de controle);
-    SELECIONA_CENTRAL --> FIM[Abre gerenciamento da central de controle];
-    DECISAO -->|Não| PERMISSAO_B(solicita permissões de bluetooth e wifi);
-    PERMISSAO_B --> PERMISSAO_BOK(concede permissões de bluetooth);
-    PERMISSAO_BOK --> LISTA_CENTRAIS(Lista centrais não sincronizadas);
-    LISTA_CENTRAIS --> SELECIONA_CENTRAL2(Seleciona uma central);
-    SELECIONA_CENTRAL2 --> LISTA_WIFI(Lista redes sem fio);
-    LISTA_WIFI --> SELECTIONA_WIFI(Seleciona rede sem fio);
-    SELECTIONA_WIFI --> SENHA_WIFI(Solicita senha da rede);
-    SENHA_WIFI--> SENHA_WIFI2(Digita a senha e clica em prosseguir);
-    SENHA_WIFI2 --> ENVIO_WIFI(Envia para a placa o SSID da rede e senha via bluetooth);
-    ENVIO_WIFI --> WIFI_OK(Placa loga na rede, envia ok para app e desliga bluetooth);
-    WIFI_OK --> FIM;
-```
-
-
 ### Gerenciamento da central
 
 Essa tela será similar a tela de gerenciamento do aplicativo Tuia.
