@@ -100,12 +100,11 @@ Opção as seguintes sessões:
   * Delay de ativação (quantos segundos depois do nível ser atingido para que a bomba seja ligada ou desligada, com valor default de 15s)
 
 * Notificações: seleciona quais eventos o usuário quer receber notificações push no app. Possiveis notificaçòes incluem:
-  1. Bomba foi iniciada.
-  2. Bomba foi desligada.
-  3. Um dos 4 níveis foi atingido.
+  1. Bomba foi iniciada
+  2. Bomba foi desligada
+  3. Um dos 4 níveis foi atingido
+  4. Central está offiline
 
 * Compartilhamento
   * Abre comparilhamento do applicativo, onde ele pode enviar um deep link com um token que permite outra pessoa visualizar essa central. 
   * Comparilhamento pode permitir usuários visualizarem ou editarem essa central.
-
-    
