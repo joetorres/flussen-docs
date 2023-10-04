@@ -45,7 +45,8 @@ flowchart TD;
     LOGIN --> DECISAO{usuário tem centrais de controle cadastradas?};
     DECISAO -->|sim| CENTRAIS(Lista centrais de controle cadastradas);
     CENTRAIS --> SELECIONA_CENTRAL(Seleciona uma central de controle);
-    SELECIONA_CENTRAL --> FIM[Abre gerenciamento da central de controle];
+    SELECIONA_CENTRAL --> GERENCIAMENTO(Abre gerenciamento da central de controle);
+    GERENCIAMENTO --> FIM[Final]
     DECISAO -->|Não| PERMISSAO_B(solicita permissões de bluetooth e wifi);
     PERMISSAO_B --> PERMISSAO_BOK(concede permissões de bluetooth);
     PERMISSAO_BOK --> LISTA_CENTRAIS(Lista centrais não sincronizadas);
@@ -58,6 +59,6 @@ flowchart TD;
     ENVIO_WIFI --> WIFI_OK(Placa loga na rede, envia ok para app e desliga bluetooth);
     WIFI_OK --> TIPO(Pergunta tipo de central de controle. Cisterna ou Reservatório);
     TIPO --> ESCOLHA_TIPO(Usuário escolhe tipo, e abre a lista de dispositivos conectados);
-    ESCOLHA_TIPO --> FIM;
+    ESCOLHA_TIPO --> GERENCIAMENTO;
 
 ```
